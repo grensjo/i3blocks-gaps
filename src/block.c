@@ -163,8 +163,8 @@ block_update_plain_text(struct block *block, char *buf)
                 return;
 
 	linecpy(&lines, props->short_text, sizeof(props->short_text) - 1);
-	if (*lines)
-		linecpy(&lines, props->color, sizeof(props->color) - 1);
+    if (*lines)
+    linecpy(&lines, props->border, sizeof(props->border) - 1);
 }
 
 static void
